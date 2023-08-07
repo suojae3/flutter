@@ -169,7 +169,42 @@ void main() {
 
 #
 
-####
+#### 16. Scaffold 위젯이란 무엇인가요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/5.png" width="400" height="200"><br/>
+
+``` dart
+void main() {
+  runApp(const MaterialApp(
+    home: Scaffold(body:
+      Text('Hello World!'),
+    ), //Scaffold
+   ), //MaterialApp
+  );
+}
+```
+- `MaterialApp`위젯은 기본적으로 root widget입니다.
+- 앱은 다양한 UI위젯들로 구성되어 있습니다. 텍스트, 백그라운드 컬러 등등..
+- 이러한 다양한 UI위젯들을 `Scaffold`로 묶어줍니다
+- 이렇게 `MatrialApp`을 루트 위젯으로 하는 위젯트리가 만들어집니다
+
+#
+
+#### 17. Dart 문법에서 type의 특징에 대해 말해주세요
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/6.png" width="400" height="200"><br/>
+
+- Dart에서 모든 Value는 타입을 가지고 있습니다 (type safe language)
+- 이때 하나의 타입만 가지는 것이 아닌 여러개의 타입을 가지게 됩니다.
+- Dart에서는 모든 value는 기본적으로 객체이기 때문에 object라는 타입을 가지고 있습니다
+
+#
+
+#### 18. Object에 대해 좀 더 설명해주세요
+
+- 플러터에서 모든 것은 위젯입니다. 그리고 위젯은 모두 Object입니다. 위젯뿐만 아니라 모든 값은 object입니다.
+- 이러한 Object는 메모리로서 데이터 구조의 단위입니다
+
 
 ---
 
