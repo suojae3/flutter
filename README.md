@@ -7,8 +7,8 @@
 
 ## 목차
 
-- [Ch01. Flutter Widget 101](#ch01-flutter-widget-101) <br/>
-- [Ch02. Flutter Layout](#ch02-flutter-layout) <br/>
+- [Ch01. Flutter Basic](#ch01-flutter-Basic) <br/>
+- [Ch02. Debugging Flutter](#ch02-Debugging-flutter) <br/>
 - [Ch03. Flutter State Basic](#ch03-flutter-state-basic) <br/>
 - [Ch04. Flutter Architecture](#ch04-flutter-architecture) <br/>
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Ch01. Flutter Widget 101
+## Ch01. Flutter Basic
 
 ### 01. Widget 이란 무엇인가요?
 
@@ -93,30 +93,6 @@
 
 ---
 
-## Ch02. Flutter Layout
+## Ch02. Debugging Flutter
 
----
 
-## Ch03. Flutter State Basic
-
----
-
-## Ch04. Flutter Architecture
-
----
-
-## Ch05. Flutter Gesture
-
----
-
-## Ch06. Flutter Setting
-
----
-
-## Ch07. Flutter Navigator
-
----
-
-## Ch08. Flutter theme
-
----
