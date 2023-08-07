@@ -88,6 +88,14 @@
 
 #
 
+#### 10. 다트 파일은 어떻게 컴파일 과정을 거쳐서 Android / iOS 기기에서 작동되나요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="pic/1.png" width="400" height="200"><br/><br/>
+
+- 먼저 Dart 파일이 처음 부터 끝까지 분석(Parse)됩니다
+- Parse가 끝나면 flutter tool에 의해 타겟 플랫폼의 네이티브 언어로 번역됩니다.
+- 이러한 네이티브 코드로 타켓 플랫폼의 기기에서 실행됩니다. 
+
 
 
 
