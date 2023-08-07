@@ -88,7 +88,7 @@
 
 #
 
-#### 10. 다트 파일은 어떻게 컴파일 과정을 거쳐서 Android / iOS 기기에서 작동되나요?
+### 10. 다트 파일은 어떻게 컴파일 과정을 거쳐서 Android / iOS 기기에서 작동되나요?
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/1.png" width="400" height="200"><br/>
 
@@ -98,7 +98,7 @@
 
 #
 
-#### 11. Words에 대해서 설명해주세요
+### 11. Words에 대해서 설명해주세요
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/2.png" width="400" height="200"><br/>
 
@@ -108,7 +108,7 @@
 
 #
 
-#### 12. 다른 함수와 `main()`함수의 차이점은 무엇인가요?
+### 12. 다른 함수와 `main()`함수의 차이점은 무엇인가요?
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/3.png" width="400" height="200">
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/4.png" width="400" height="200"><br/>
@@ -121,7 +121,7 @@
 
 #
 
-#### 13. `MaterialApp`이란 무엇인가요?
+### 13. `MaterialApp`이란 무엇인가요?
 
 ```dart
 import package:flutter/material.dart';
@@ -137,7 +137,7 @@ void main() {
 
 #
 
-#### 14.다트에서 기본적인 함수 선언 방법을 말해주세요
+### 14.다트에서 기본적인 함수 선언 방법을 말해주세요
 
 ```dart
 void add({num1, num2}) {
@@ -152,7 +152,7 @@ void demo() {
 
 #
 
-#### 15. `const` 선언의 장점은 무엇인가요?
+### 15. `const` 선언의 장점은 무엇인가요?
 
 ```dart
 const Text('hello World!') //defined -> 디바이스 메모리 특정 주소< ... > 에 저장
@@ -169,7 +169,7 @@ void main() {
 
 #
 
-#### 16. Scaffold 위젯이란 무엇인가요?
+### 16. Scaffold 위젯이란 무엇인가요?
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/5.png" width="400" height="200"><br/>
 
@@ -190,7 +190,7 @@ void main() {
 
 #
 
-#### 17. Dart 문법에서 type의 특징에 대해 말해주세요
+### 17. Dart 문법에서 type의 특징에 대해 말해주세요
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="image/6.png" width="400" height="200"><br/>
 
@@ -200,7 +200,7 @@ void main() {
 
 #
 
-#### 18. Object에 대해 좀 더 설명해주세요
+### 18. Object에 대해 좀 더 설명해주세요
 
 - 플러터에서 모든 것은 위젯입니다. 그리고 위젯은 모두 Object입니다. 위젯뿐만 아니라 모든 값은 object입니다.
 - 이러한 Object는 메모리로서 데이터 구조의 단위입니다
