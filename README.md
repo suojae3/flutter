@@ -205,6 +205,31 @@ void main() {
 - 플러터에서 모든 것은 위젯입니다. 그리고 위젯은 모두 Object입니다. 위젯뿐만 아니라 모든 값은 object입니다.
 - 이러한 Object는 메모리로서 데이터 구조의 단위입니다
 
+#
+
+### 19. 제너릭 타입에 대해 설명해주세요
+
+```dart
+//List<color>
+colors: [
+    Color.fromARGB(255, 78, 13, 151),
+    Color.fromARGB(255, 107, 15, 168),
+]
+```
+
+- 제너릭 타입은 타입에 대해 자율성을 열어놓은 타입입니다, < > 통해 표현합니다
+- `List<Color>`의 경우 Color의 하위 타입 아무거나 배열에 넣을 수 있게됩니다. `colors: [Colors.deepPurple, color.fromARGB(255, 45, 7, 98)]`
+
+#
+
+### 20. Flutter의 Data Structure 관점에서 class를 설명해주세요
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/8.png" width="400" height="200"><br/>
+
+- Dart에서 모든 값은 object입니다. 그리고 Object는 데이터입니다. 그리고 데이터는 컴퓨터 메모리에 저장됩니다
+- Object라는 데이터(variable/properties)를 로직(functions/methods)에 의해 결합함으로서 결과물을 구현합니다.
+- 클래스는 이러한 데이터와 로직을 묶어놓은 설계도입니다.
+
 
 ---
 
