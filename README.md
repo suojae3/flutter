@@ -230,6 +230,34 @@ colors: [
 - Object라는 데이터(variable/properties)를 로직(functions/methods)에 의해 결합함으로서 결과물을 구현합니다.
 - 클래스는 이러한 데이터와 로직을 묶어놓은 설계도입니다.
 
+#
+
+### 21.widget을 선언할 때 클래스와 다른점은 무엇인가요?
+
+```dart
+class GradientContainer extends StatelessWidget {
+    @override
+    Widget build(context){
+        return 'Hello World!';
+    }        
+}
+```
+- 위젯도 클래스입니다. 하지만 단순히 설계도인 클래스와 다르게 위젯은 정적인 위젯(statless widget)과 동적인 위젯(state widget)으로 나누어집니다.
+- 따라서 위젯은 상위클래스인 `StatelessWidget` 과 `StateWidget`의 하위클래스로서 확장하는 형식으로 구현됩니다. 이렇게 상위클래스의 속성과 메서드를 상속받음으로서 다양한 속성과 메서드를 활용할 수 있게됩니다.
+- 위젯을 UI에 그리기 위해서는 `build()`함수를 호출해야합니다.이 빌드함수는 상위클래스(stateless, state widget)에서 상속받은 함수로 재정의를 하기위해 `@oveeride`키워드를 써줍니다
+- 이때 `build()`함수는 super class에서 widget을 리턴하도록 선언되어 있습니다. 따라서 앞부분에 Widget을 붙여주도록 합니다.
+- 또한 `build()`함수는 필수적으로 가져야할 파라미터가 있습니다 바로 `context`입니다. 이 컨텍스트는 위젯트리로 구체적으로 무얼 그릴지 내용물이 삽입되어집니다.
+- 여기에 마지막에 리턴까지 적어주면 위젯선언의 기본셋팅을 마쳤다고 볼 수 있습니다. 이후에 어떻게 위젯의 내용물을 채울지 적어주면 됩니다.
+
+#
+
+### 22. Widget 선언시 생성자는 어떻게 작성하나요?
+
+```dart
+```
+
+- 클래스이기 때문에 클래스안의 속성들을 초기화해주어야합니다. 이때 생성자 메서드의 아규먼트로 `key`를 사용합니다
+- 
 
 ---
 
