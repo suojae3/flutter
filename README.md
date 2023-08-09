@@ -254,11 +254,21 @@ class GradientContainer extends StatelessWidget {
 ### 22. Widget 선언시 생성자는 어떻게 작성하나요?
 
 ```dart
+class GradientContainer extends StatlessWidget {
+    const GradientContainer({super.key});
+
+    @overide
+    Widget build(contexgt) {
+        return Contaienr( ... ) 
+    }    
+}
 ```
 
 - 클래스이기 때문에 클래스안의 속성들을 초기화해주어야합니다. 이때 생성자 메서드의 아규먼트로 `key`를 사용합니다
-- 
-
+- `GradientContainer({key}): super(key; key);` 에서 세번째 `key`는 첫번째 `key`를 의미하며 이 첫번째 `key`는 이 클래스의 네임드 아규먼트입니다.
+- 두번째 `key`는 super class인 StatlessWidget의 네임드 아규먼트입니다
+- dart는 다행히도 축약문법을 제공하고 있습니다. 위 코드를 이렇게 축햑할 수 있습니다. `GradientContainer({super.key})`
+- 이 때 이 클래스는 재사용되기 때문에 `const`를 적어서 나중에 메모리 주소를 그대로 재사용할 수 있도록 적어줍니다.
 ---
 
 ## Ch02. Debugging Flutter
