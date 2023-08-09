@@ -269,6 +269,12 @@ class GradientContainer extends StatlessWidget {
 - 두번째 `key`는 super class인 StatlessWidget의 네임드 아규먼트입니다
 - dart는 다행히도 축약문법을 제공하고 있습니다. 위 코드를 이렇게 축햑할 수 있습니다. `GradientContainer({super.key})`
 - 이 때 이 클래스는 재사용되기 때문에 `const`를 적어서 나중에 메모리 주소를 그대로 재사용할 수 있도록 적어줍니다.
+
+#
+
+### 23. 41강 2분 18초
+
+
 ---
 
 ## Ch02. Debugging Flutter
