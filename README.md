@@ -272,10 +272,47 @@ class GradientContainer extends StatlessWidget {
 
 #
 
-### 23. 41강 2분 18초
+### 23. Class의 아규먼트는 어떻게 받아야하나요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/9.png" width="400" height="200">
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/10.png" width="400" height="200"><br/>
+
+- Class 속성의 생성자는 먼저 `{super.key}` 를 중심으로 class의 속성타입과 superclass 속성 타입을 연결시켜줍니다 (그래야 슈퍼클래스의 타입 기능들을 사용할 수 있기 때문에)
+- `const StyledText(String text, {super key}: text = text) String text` 이 코드에서 첫번째 `text`와 세번째 `text`는  클래스의 아규먼트를 의미 합니다. 두번째 텍스트와 네번째 텍스트는 text variable을 의미합니다.
+
+#
+
+### 24. Class 아규먼트 선언을 축약해서 선언해주세요
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/11.png" width="400" height="200">
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/13.png" width="400" height="200"><br/>
+
+
+- 위와 같은 문법은 class 아규먼트를 중복해서 적어주어야하기 때문에 dart는 이를 위해 축약문법을 제공하고 있습니다
+- `const StyledText(String text, {super key}: text = text)` 대신 `const StyledText(this.text, {super key});` 로 줄일 수 있습니다.
+- text 와 같이 축약문법을 사용한다면 네이밍 커스터마이징은 불가하고 text 그대로 써주어야 합니다.
+
+#
+
+### 25. 만약 argument를 바뀌지 않는 다면 어떻게 처리하는 것이 좋을까요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/12.png" width="400" height="200"><br/>
+
+- Argument 가 바뀌지 않는다면 final 키워드와 함께 한 번만 초기화하면 되기 때문에 생성자 함수에도 const 키워드를 붙여줍니다.
+- 이렇게 const 키워드를 붙여주면 다트는 캐시메모리에 저장하여 사용하기 때문에 최적화를 도모할 수 있습니다.
+
+#
+
+### 26. 
+
+
 
 
 ---
+
+
+
+
 
 ## Ch02. Debugging Flutter
 
