@@ -303,7 +303,57 @@ class GradientContainer extends StatlessWidget {
 
 #
 
-### 26. 
+### 26. flutter에서 외부이미지 파일을 가져오려면 어떻게 해야하나요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/14.png" width="400" height="200"><br/>
+
+- asset 파일에 이미지 파일을 저장하고 yml파일에 경로명/이미지파일명을 추가해야합니다.
+
+ #
+
+ ### 27. 주어진 클래스에서 점접근자로 접근할 수 있는 함수를 선언해주세요
+ 
+```dart
+class GradientContainer extends StatelessWidget {
+  const GradientContainer(this.color1, this.color2, {super.key});
+
+  const GradientContainer.purple({super.key})
+      : color1 = Colors.deepPurple,
+        color2 = Colors.indigo;
+
+   ...
+}
+```
+```dart
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: GradientContainer.purple(color1),
+      ),
+    ),
+  );
+}
+```
+- super.key를 통해 상위 클래스에 값을 연결시켜줍니다. 이러한 함수를 mu**ltiple constructor function** 이라 부릅니다
+
+#
+
+### 28. 플러터에서 제공하는 메인버튼 종류 3가지는 어떤 것인가요?
+
+- Flutter 가 제공하는 버튼의 종류로는 대표적으로 3가지가 있습니다
+- `ElevatedButton(onPressed: onPressed. child: child)` - 배경색과 약간의 shadow가 있는 버튼
+- `OutlinedButton(onPressed: onPressed, child: child)` - 배경색 없는 버튼
+- `TextButton(onPressed: onPressed, child: cihld)` - 텍스트 버튼
+
+
+#
+
+### 29. 다트에서 함수는 일급객체인가요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/15.png" width="400" height="200"><br/>
+
+- 예 그렇습니다. 다트에서 함수는 아규먼트로 넣을 수 있고, 값으로 리턴될 수 있고, 변수로 할당될 수 있으며 collection의 원소로 저장될 수 있습니다.
 
 
 
